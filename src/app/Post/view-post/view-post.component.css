@@ -1,0 +1,12 @@
+.cover-photo{
+    position: relative;
+}
+.title{
+    font-size: 64px;
+    text-align: center;
+}
+.auther{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,24 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" [routerLink]="['']"><img width="100px" src="/assets/img/logooverlay.png"></a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a [routerLink]="['post/write']">Write a post</a></li>
+        <li><a [routerLink]="['post/mypost']">My Post</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+          <li><img (click)="userShowHide()" width="55px;" src="/assets/img/profile.png" /></li>
+        </ul>
+    </div>
+  </nav>
+  <ng-container *ngIf="isShowUserDropDown">
+    <mat-card class="UserDropDown">
+      <mat-card-content>
+        <ul>
+          <li [routerLink]="['/user']">Profile</li>
+          <li (click)="logout()">Logout</li>
+        </ul>
+      </mat-card-content>
+    </mat-card>
+  </ng-container>
