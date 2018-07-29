@@ -1,3 +1,3 @@
 export class Config {
-    public readonly apiUrl = 'http://localhost:55660/api/';
+    public readonly apiUrl = 'http://prv.sub.domain.com/api/';
 }
