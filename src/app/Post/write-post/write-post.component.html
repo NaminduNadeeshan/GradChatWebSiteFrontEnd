@@ -1,0 +1,22 @@
+
+<h1>Write Post</h1>
+
+<div class="rich-text">
+    <form [formGroup]="form">
+        <div class="col-lg-offset-11 button-save">
+            <Button class="btn btn-success" (click)= "patchValue()">Save</Button>
+          </div>
+
+        <div class="title"><input #title [formControl]="form.controls['title']"  class="form-control" placeholder="Tilte "/></div>  
+        <div class="form-group">
+          <label class="form-group">Cover Photo</label>
+          <input #cover  (change)="onFileChange($event)" type="file" class="form-control" />
+        </div>
+
+        <div  class="form-group">
+          <label class="form-group"> Abstract Content</label>
+          <textarea #abstract class="form-control" [formControl]="form.controls['abstract']" maxlength="200"></textarea>
+        </div>
+        <quill-editor #editor  [formControl]="form.controls['editor']"></quill-editor>
+      </form>
+</div>

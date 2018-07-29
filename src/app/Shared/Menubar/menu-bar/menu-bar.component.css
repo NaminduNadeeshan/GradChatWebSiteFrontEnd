@@ -1,0 +1,15 @@
+.UserDropDown{
+    float: right;
+    position: relative;
+    margin-top: -21px;
+    margin-right: 1px;
+    text-align: start;
+    width: 126px;
+}
+ul{
+    list-style-type: none;  
+}
+
+li:hover{
+    background-color: #B3B1B1;
+}

@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="cover-photo col-lg-12">
+        <img width="100%;" src='data:image/png;base64,{{post.coverPhoto}}' alt="Photo of a Shiba Inu">
+    </div>
+</div>
+
+<div class="title">{{post.title}}</div>
+<div class="auther">By <br>
+  {{post.firstName}} {{post.lastName}}</div>
+<br><br>
+<div>
+    <mat-card class="example-card">
+        <mat-card-content>
+          <p [innerHTML]="post.content">
+            
+          </p>
+        </mat-card-content>
+      </mat-card>
+</div>
